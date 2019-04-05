@@ -3,164 +3,215 @@
 	<head>
 		<title>Transportation</title>
             <!--Links-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
 	</head>
 	<body>
-	    
 	    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Transportation</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
-            </ul>
+            <a class="navbar-brand" href="#">Transportation</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class = "images container" id="pics">
+	        <div class = "container">
+	            <div class = "row"> 
+	                <div class = "col-md-4">
+	                    <img class = "transport" src= "ambulance.png"/>
+	                </div>
+	                <div class = "col-md-4">
+	                    <img class = "transport" id = "LOGO" src= "logo.png"/>
+	                </div>
+	                <div class = "col-md-4">
+	                    <img class = "transport" src= "green car.png"/>
+	                </div>
+	           </div>
+	       </div>
+        </section>
+	    <!-- service -->
+        <section class="services container">
+            <h1>Services</h1>
+            <hr/>
+            <div class="row">
+                <div class="col-md-6">
+                    <i class="fas fa-ship"></i>
+                    <span><strong>Ferry</strong></span>
+                    <p>Travel to your location while relaxing in the sunlight with the smell of fresh water.</p>
+                </div>
+                <div class="col-md-6 ">
+                    <i class="fab fa-uber"></i>
+                    <span><strong>Black Car</strong></span>
+                    <p>Too lazy to take the bus or the train? Well black car is for you! Get to your destination fast and easy, all you need is point out the location.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <i class="fas fa-plane"></i>
+                    <span><strong>Airplane</strong></span>
+                    <p>Experience traveling in the sky and take a glimpse of the beautiful scenery of your world.</p>
+                </div>
+                <div class="col-md-6 ">
+                    <i class="fas fa-taxi"></i>
+                    <span><strong>Taxi & Limousine</strong></span>
+                    <p>Serve as quick and easy mean of tranportation from one location to another.</p>
+                </div>
+            </div>
+        </section>
+        <!---Pricing--->
+        <section class= "pricing container">
+            <div class row>
+                <div col-md-3>
+                    <p>Ferry</p>
+                    <p>reward membership (one day round trip- $25.65</p>
+                    <p>Base fare(one day round trip)- $57.00</p>
+                    <p>Full Fare(one day round trip- $61.00</p>
+                </div>
+            </div>
+        </section>
+            <!---Our team--->
+                <div class="bd-example">
+      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://uploads.concordia.net/2018/09/06114325/Dara_ELT_Newsroom_1000px-400x400.jpg width="200px"" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Dara Khosrowshahi<</h5>
+              <p>Dara Khosrowshahi is a intelligent and sucessful business man and the chief executive officer of the organization.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Barney Harford</h5>
+              <p>Barney Harford is responsible for handling and managing the daily operations of the organization like a director of operation.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="..." class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
         </div>
-    </nav>
-    <section class = "images container" id="pics">
-	    <div class = "container">
-	        <div class = "row"> 
-	            <div class = "col-md-3">
-	                
-	                <img id = "logo" class = "transport" src="logo.png"/>
-	            </div>
-	            <div class = "col-md-3">
-	                <img class = "transport" src="https://cdn.vox-cdn.com/thumbor/V-34zzZaziPdN7Hbhfb6OT-kam4=/0x0:4666x3111/1200x800/filters:focal(1886x1151:2632x1897)/cdn.vox-cdn.com/uploads/chorus_image/image/60966249/851372958.jpg.1534865004.jpg"></img>
-	            </div>
-	            <div class = "col-md-3">
-	                <img class = "transport" src="https://baystatecruisecompany.com/wp-content/uploads/2018/06/provincetown-III.jpg"></img>
-	            <div class = "col-md-3">
-	                <img class = "transport" src="https://www.aerospace-technology.com/wp-content/uploads/static-progressive/The%20Biggest%20Passenger%20Airplanes%207.jpg"></img>
-	            </div>
-	        </div>
-	    </div>
-    </section>
-	<!-- service -->
-    <section class="services container">
-        <h1>test</h1>
-        <p>test</p>
-        <hr>
-        <div class="row">
-            <div class="col-md-6">
-                <i class="fa-desktop"></i>
-                <span><strong>Ferry</strong></span>
-                <p>Travel to your location while relaxing in the sunlight with the smell of fresh water.</p>
-            </div>
-            <div class="col-md-6 ">
-                <i class="fas fa-mobile-alt"></i>
-                <span><strong>Uber Drive</strong></span>
-                <p>Too lazy to take the bus or the train? Well Uber Drive is for you! Get to your destination fast and easy, all you need is point out the location.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <i class="fa-desktop"></i>
-                <span><strong>Airplane</strong></span>
-                <p>Experience traveling in the sky and take a glimpse of the beautiful scenery of your world.</p>
-            </div>
-            <div class="col-md-6 ">
-                <i class="fas fa-mobile-alt"></i>
-                <span><strong>Taxi & Limousine</strong></span>
-                <p></p>
-            </div>
-        </div>
-    </section>
-    
-    <!---Our team--->
-    <section id="team" class="team container">
-	    <h1>Team</h1>
-	    	<div class="row">
-			    <div class="col-md-3">
-				    <img src="https://uploads.concordia.net/2018/09/06114325/Dara_ELT_Newsroom_1000px-400x400.jpg" width="200px"></img>
-				    <div>Dara Khosrowshahi</div>
-				    <h4>CEO</h4>
-				    <p>Dara Khosrowshahi is a intelligent and sucessful business man and the chief executive officer of the organization.</p>
-				</div>
-		    	<div class="col-md-3">
-				    <img src="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/07/BarneyHarford_Newsroom_1000px.jpg" width="200px"></img>
-				    <div>Barney Harford</div>
-                    <h4>COO</h4>
-				    <p>Barney Harford is responsible for handling and managing the daily operations of the organization like a director of operation.</p>
-			    </div>
-			    <div class="col-md-3">
-    				<img src="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2018/12/181030_1000px_Nelson.jpg" width="200px"></img>
-    				<div>Nelson Chai</div>
-    				<h4>CFO</h4>
-    				<p>Nelson Chai is responsible for managing the finances for the organization and reports it back to the CEO.</p>
-			
-			    </div>
-			
-			    <div class="col-md-3">
-    				<img src="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/07/Thuan_ELT_Newsroom_1000px_R2.jpg" width="200px"></img>
-    				<div>Thuan Pham</div>
-    				<h4>CTO</h4>
-    				<p>Thuan Pham is the cheif technology officer of Uber and responsible for managing the organization's technology department.</p>
-			
-			    </div>
-			
-		</div>
-		
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+                
+            
+            
+            
+            
+        <section id="team" class="team container">
+	        <h1>Team</h1>
+	        	<div class="row">
+			        <div class="col-md-3">
+				        <img src="https://uploads.concordia.net/2018/09/06114325/Dara_ELT_Newsroom_1000px-400x400.jpg" width="200px"/>
+				        <div>Dara Khosrowshahi</div>
+				        <h4>CEO</h4>
+				        <p>Dara Khosrowshahi is a intelligent and sucessful business man and the chief executive officer of the organization.</p>
+			    	</div>
+		        	<div class="col-md-3">
+				        <img src="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/07/BarneyHarford_Newsroom_1000px.jpg" width="200px"/>
+				        <div>Barney Harford</div>
+                        <h4>COO</h4>
+				        <p>Barney Harford is responsible for handling and managing the daily operations of the organization like a director of operation.</p>
+			        </div>
+			        <div class="col-md-3">
+    			    	<img src="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2018/12/181030_1000px_Nelson.jpg" width="200px"/>
+    			    	<div>Nelson Chai</div>
+    			    	<h4>CFO</h4>
+    			    	<p>Nelson Chai is responsible for managing the finances for the organization and reports it back to the CEO.</p>
+			        </div>
+			        <div class="col-md-3">
+    			    	<img src="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/07/Thuan_ELT_Newsroom_1000px_R2.jpg" width="200px"/>
+    			    	<div>Thuan Pham</div>
+    				    <h4>CTO</h4>
+    			    	<p>Thuan Pham is the cheif technology officer of Uber and responsible for managing the organization's technology department.</p>
+			        </div>
+	        	</div>
+	        	
+	        	
+	        	
+	    </section>
 		<!---Trust by--->
 		<section class="Trust Container">
 		    <h1>Trusted by</h1>
     		    <div class="row">
     		        <div class="col-md-3">
-    		            <img src="https://www.allstate.com/resources/Allstate/images/global/logo_footer.png?v=1b0db48b-16f1-149f-24c7-372693c3474e" width="100px">
+    		            <img src="https://www.allstate.com/resources/Allstate/images/global/logo_footer.png?v=1b0db48b-16f1-149f-24c7-372693c3474e" width="100px"/>
     		            <h3>Allstate</h3>
-    		            <p>Allstate support this business by providing insurance for our car services.  </p>
-    		            
+    		            <p>Allstate support this business by car for our taxi & limousine and providing insurance for our car services.</p>
     		        </div>
-    		       
-    		  <div class="col-md-3">
-    		            <img src="https://www.hornblower.com/uploads/multimediaimage/57/highRes/Hornblower_CE_vert_CMYK-01.png" width="100px">
+    		      <div class="col-md-3">
+    		            <img src="https://www.hornblower.com/uploads/multimediaimage/57/highRes/Hornblower_CE_vert_CMYK-01.png" width="150px"/>
     		            <h3>Hornblower Cruises</h3>
-    		            <p>Hornblower Cruises support this business by providing the ferry and in addition they provide   </p>
-    		            
-    		        </div> 
+    		            <p>Hornblower Cruises support this business by providing the ferry and in addition they provide fine quality food and activities.</p>
+    		      </div> 
+    		      <div class="col-md-3">
+    		          <img src="https://www.intelligent-aerospace.com/content/dam/avi/online-articles/2013/02/nbaa_logo.jpg" width="150px"/>
+    		          <h3>NBAA</h3>
+    		          <p>NBAA support this business by providing jet and airplanes and repairation services of the jet and air planes</p>
+    		        </div>   
+    		        
+    		        <div class="col-md-3">
+    		            <img src="https://www.hornblower.com/uploads/multimediaimage/57/highRes/Hornblower_CE_vert_CMYK-01.png" width="150px"/>
+    		            <h3>Nationwide Insurance</h3>
+    		            <p>Nationwide Insurance support this company by provide financial support and tehnical suppory to all our services.</p>
+    		      </div> 
     		    </div>
-		    
 		</section>
-
-    </section>
-	<Footer class="container">
-        <div class="row">
-            <div class="col-md-4">
-                <h3>Contact us</h3>
-                <p>
-                    <i class="fas fa-home"></i>
-                     Address
-                </p>
-                <p>
-                <i class="fas fa-envelope"></i>
-                 Email
-                </p>
-                <p>
-                    <i class="fas fa-phone"></i>
-                    Phone Number
-                </p>
-                <p>
-                    <i class="fas fa-"></i>
-                </p>
-             </div>
-        </div>
+	    <Footer class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Contact us</h3>
+                    <p>
+                        <i class="fas fa-home"></i>
+                         Address
+                    </p>
+                    <p>
+                    <i class="fas fa-envelope"></i>
+                     Email
+                    </p>
+                    <p>
+                        <i class="fas fa-phone"></i>
+                        Phone Number
+                    </p>
+                    <p>
+                        <i class="fas fa-"></i>
+                    </p>
+                 </div>
+            </div>
         </Footer>
-            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-		</body>
-	</html>
+    </body>
+</html>

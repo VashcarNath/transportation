@@ -2,8 +2,16 @@
 {
     font-size: 20pt;
 }
+#pics
+{
+    text-align: center;
+}
 #pics img
 {
-    width:200px;
-    height:100px;
+    width:150px;
+    height:150px;
+}
+#team img
+{
+    padding:20px;
 }
