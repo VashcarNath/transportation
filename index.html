@@ -3,51 +3,67 @@
 	<head>
 		<title>Transportation</title>
             <!--Links-->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"/>
         <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+	    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+	    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
 	</head>
 	<body>
 	    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Transportation</a>
+            <a class="navbar-brand" class = "animated jello" href="index.html" id = "firstA">Transportation</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse animated bounceInLeft" id="navbarNav">
+                <span class="nav-item" id = "firstSpan">
+                    <a class="nav-link" href="#info">About Us</a>
+                </span>
+                <span class="nav-item">
+                    <a class="nav-link" href="#service">Services</a> 
+                </span>
+                <span class="nav-item">
+                    <a class="nav-link" href="#prices">Pricing</a>
+                </span>
+                <span class = "nav-item">
+                    <a class ="nav-link" href="#people">Team</a> 
+                </span>
+                <span class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </span>
             </div>
         </nav>
-        <section class = "images container" id="pics">
+        <section class = "images container animated slideInUp" id="pics">
 	        <div class = "container">
 	            <div class = "row"> 
-	                <div class = "col-md-4">
-	                    <img class = "transport" src= "ambulance.png"/>
+	                <div class = "col-md-2.4">
+	                    <img class = "transport" src= "car.png"/>
 	                </div>
-	                <div class = "col-md-4">
+	                <div class = "col-md-2.4">
+	                    <img class = "transport" src = "plane.png"/>
+	                </div>
+	                <div class = "col-md-2.4">
 	                    <img class = "transport" id = "LOGO" src= "logo.png"/>
 	                </div>
-	                <div class = "col-md-4">
-	                    <img class = "transport" src= "green car.png"/>
+	                <div class = "col-md-2.4">
+	                    <img class = "transport" src = "ferry.png"/>
+	                </div>
+	                <div class = "col-md-2.4">
+	                    <img class = "transport" src= "taxi.png"/>
 	                </div>
 	           </div>
 	       </div>
         </section>
+        <!--About us -->
+        <section id = "info" class="bg-faded p-5 my-3 animated fadeInUpBig">
+            <h1>About Us</h1>
+            <p>
+                We offer many different ways of transportation for our customers. If time is their concern, we offer them a ride in our fastest car. If the experience is most important, cruising a ship is just an appointment away. Enjoyable and fast, the way commuting should be.
+            </p>
+        </section>
 	    <!-- service -->
-        <section class="services container">
+        <section class="services container animated bounceInRight" id = "service">
             <h1>Services</h1>
             <hr/>
             <div class="row">
@@ -57,7 +73,7 @@
                     <p>Travel to your location while relaxing in the sunlight with the smell of fresh water.</p>
                 </div>
                 <div class="col-md-6 ">
-                    <i class="fab fa-uber"></i>
+                    <i class="fas fa-car"></i>
                     <span><strong>Black Car</strong></span>
                     <p>Too lazy to take the bus or the train? Well black car is for you! Get to your destination fast and easy, all you need is point out the location.</p>
                 </div>
@@ -71,98 +87,129 @@
                 <div class="col-md-6 ">
                     <i class="fas fa-taxi"></i>
                     <span><strong>Taxi & Limousine</strong></span>
-                    <p>Serve as quick and easy mean of tranportation from one location to another.</p>
+                    <p>Serves as a quick and easy means of tranportation from one location to another.</p>
                 </div>
             </div>
         </section>
         <!---Pricing--->
-        <section class= "pricing container">
-            <div class row>
-                <div col-md-3>
-                    <p>Ferry</p>
-                    <p>reward membership (one day round trip- $25.65</p>
-                    <p>Base fare(one day round trip)- $57.00</p>
-                    <p>Full Fare(one day round trip- $61.00</p>
+        <section class= "pricing container animated bounceInLeft" id = "prices">
+            <h1>Our Prices</h1>
+            <hr/>
+            <div class = "container">
+                <div class="row">
+                    <div class = "col-md-3">
+                        <span>Ferry</span>
+                        <ul>
+                            <li>Reward membership(one day round trip)-$25.65</li>
+                            <li>Base fare(one day round trip)-$57.00</li>
+                            <li>Full Fare(one day round trip)-$61.00</li>
+                        </ul>
+                    </div>
+                    <div class = "col-md-3">
+                        <span>Black Car</span>
+                        <ul>
+                            <li>Reward membership-$2.50 initial charge plus $0.25 per mile</li>
+                            <li>Base fare-$2.50 initial charge plus $0.50 per mile</li>
+                        </ul>
+                    </div>
+                    <div class = "col-md-3">
+                        <span>Airplane</span>
+                        <ul>
+                            <li>Reward membership-25% off on all tickets at all times</li>
+                            <li>Base fare-Regular ticket prices with occasional seasonal discounts</li>
+                        </ul>
+                    </div>
+                    <div class = "col-md-3">
+                        <span>Taxi & Limousine</span>
+                        <ul>
+                            <li>Reward membership-25% off all rides exceeding 10 miles</li>
+                            <li>Base-15% off all rides exceeding 15 miles</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
             <!---Our team--->
-                <div class="bd-example">
-      <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://uploads.concordia.net/2018/09/06114325/Dara_ELT_Newsroom_1000px-400x400.jpg width="200px"" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Dara Khosrowshahi<</h5>
-              <p>Dara Khosrowshahi is a intelligent and sucessful business man and the chief executive officer of the organization.</p>
+        <section id = "carouselSection" class = "carousel animated fadeInUp">    
+            <div id = "ourTeam">Our Team</div>
+            <div class="bd-example">
+              <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                  <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Dara.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Dara Khosrowshahi</h5>
+                      <p>Dara Khosrowshahi is a intelligent and sucessful business man, and he is the chief executive officer of the organization.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Barney.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Barney Harford</h5>
+                      <p>Barney Harford is responsible for handling and managing the daily operations of the organization.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Nelson.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Nelson Chai</h5>
+                      <p>Nelson Chai is responsible for managing the finances for the organization.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Nelson.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Thuan Pham</h5>
+                      <p>Thuan Pham is responsible for managing the organization's technology department.</p>
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Barney Harford</h5>
-              <p>Barney Harford is responsible for handling and managing the daily operations of the organization like a director of operation.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-                
-            
-            
-            
-            
-        <section id="team" class="team container">
-	        <h1>Team</h1>
+        </section> 
+        <br/>
+        <section id="teamSection" class="team container animated lightSpeedIn">
+	        <h1>Team Members</h1>
 	        	<div class="row">
 			        <div class="col-md-3">
-				        <img src="https://uploads.concordia.net/2018/09/06114325/Dara_ELT_Newsroom_1000px-400x400.jpg" width="200px"/>
-				        <div>Dara Khosrowshahi</div>
+				        <img src="Dara.jpg" width="200px"/>
+				        <div>Dara K.</div>
 				        <h4>CEO</h4>
-				        <p>Dara Khosrowshahi is a intelligent and sucessful business man and the chief executive officer of the organization.</p>
+				        <p>Dara Khosrowshahi is a intelligent and sucessful business man, and he is the chief executive officer of the organization.</p>
 			    	</div>
 		        	<div class="col-md-3">
-				        <img src="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/07/BarneyHarford_Newsroom_1000px.jpg" width="200px"/>
+				        <img src="Barney.jpg" width="200px"/>
 				        <div>Barney Harford</div>
                         <h4>COO</h4>
-				        <p>Barney Harford is responsible for handling and managing the daily operations of the organization like a director of operation.</p>
+				        <p>Barney Harford is responsible for handling and managing the daily operations of the organization.</p>
 			        </div>
 			        <div class="col-md-3">
-    			    	<img src="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2018/12/181030_1000px_Nelson.jpg" width="200px"/>
+    			    	<img src="Nelson.jpg" width="200px"/>
     			    	<div>Nelson Chai</div>
     			    	<h4>CFO</h4>
-    			    	<p>Nelson Chai is responsible for managing the finances for the organization and reports it back to the CEO.</p>
+    			    	<p>Nelson Chai is responsible for managing the finances for the organization.</p>
 			        </div>
 			        <div class="col-md-3">
-    			    	<img src="https://ubernewsroomapi.10upcdn.com/wp-content/uploads/2017/07/Thuan_ELT_Newsroom_1000px_R2.jpg" width="200px"/>
+    			    	<img src="Thuan.jpg" width="200px"/>
     			    	<div>Thuan Pham</div>
     				    <h4>CTO</h4>
-    			    	<p>Thuan Pham is the cheif technology officer of Uber and responsible for managing the organization's technology department.</p>
+    			    	<p>Thuan Pham is responsible for managing the organization's technology department.</p>
 			        </div>
 	        	</div>
-	        	
-	        	
-	        	
 	    </section>
 		<!---Trust by--->
 		<section class="Trust Container">
@@ -171,44 +218,47 @@
     		        <div class="col-md-3">
     		            <img src="https://www.allstate.com/resources/Allstate/images/global/logo_footer.png?v=1b0db48b-16f1-149f-24c7-372693c3474e" width="100px"/>
     		            <h3>Allstate</h3>
-    		            <p>Allstate support this business by car for our taxi & limousine and providing insurance for our car services.</p>
+    		            <p>Allstate supports our business by providing us with insurance for our cars and limousines</p>
     		        </div>
     		      <div class="col-md-3">
     		            <img src="https://www.hornblower.com/uploads/multimediaimage/57/highRes/Hornblower_CE_vert_CMYK-01.png" width="150px"/>
     		            <h3>Hornblower Cruises</h3>
-    		            <p>Hornblower Cruises support this business by providing the ferry and in addition they provide fine quality food and activities.</p>
+    		            <p>Hornblower Cruises supports our business by providing the ferries, and, in addition, they provide fine quality food and activities.</p>
     		      </div> 
     		      <div class="col-md-3">
     		          <img src="https://www.intelligent-aerospace.com/content/dam/avi/online-articles/2013/02/nbaa_logo.jpg" width="150px"/>
     		          <h3>NBAA</h3>
-    		          <p>NBAA support this business by providing jet and airplanes and repairation services of the jet and air planes</p>
+    		          <p>NBAA supports our business by providing jets, airplanes, and repairation services.</p>
     		        </div>   
     		        
     		        <div class="col-md-3">
-    		            <img src="https://www.hornblower.com/uploads/multimediaimage/57/highRes/Hornblower_CE_vert_CMYK-01.png" width="150px"/>
+    		            <img src="nationwide.png" width="150px"/>
     		            <h3>Nationwide Insurance</h3>
-    		            <p>Nationwide Insurance support this company by provide financial support and tehnical suppory to all our services.</p>
+    		            <p>Nationwide Insurance supports our business by providing financial and technical support to all of our workers and employees.</p>
     		      </div> 
     		    </div>
+    		    <hr/>
 		</section>
-	    <Footer class="container">
+	    <Footer class="container" id = "contact">
             <div class="row">
                 <div class="col-md-4">
                     <h3>Contact us</h3>
                     <p>
+                         <i class="fas fa-Full Name"></i>
                         <i class="fas fa-home"></i>
-                         Address
+                         Address  <input type = "text"/>
                     </p>
                     <p>
-                    <i class="fas fa-envelope"></i>
-                     Email
+                        <i class="fas fa-envelope"></i>
+                        Email <input type = "text"/>
                     </p>
                     <p>
                         <i class="fas fa-phone"></i>
-                        Phone Number
+                        Phone Number<input type = "text"/>
                     </p>
                     <p>
-                        <i class="fas fa-"></i>
+                        <i class="fas fa-user"></i>
+                        full name <input type = "text"/>
                     </p>
                  </div>
             </div>
